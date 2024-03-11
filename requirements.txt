@@ -1,0 +1,4 @@
+rdkit
+PyQt5
+numpy
+pandas
