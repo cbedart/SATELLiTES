@@ -13,6 +13,19 @@ https://github.com/cbedart/SATELLiTES/
 
 -------------
 
+## Installation
+
+SATELLiTES can be quickly installed [from the PyPI repository](https://pypi.org/project/SATELLiTES-SBDD/) :
+```
+pip install SATELLiTES-SBDD
+```
+Then use the shortcut command to launch the software
+```
+SATELLiTES
+```
+
+-------------
+
 ## How to use SATELLiTES  
 
 If you want to learn how to use SATELLiTES, please have a look at the "SATELLiTES Wiki.pdf" document.  
