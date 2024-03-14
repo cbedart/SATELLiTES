@@ -1,0 +1,7 @@
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus, QTimeEdit:focus, QDateEdit:focus, QDateTimeEdit:focus {
+    border-width: 1px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #000000;
+    background-color: #fafafa;
+}

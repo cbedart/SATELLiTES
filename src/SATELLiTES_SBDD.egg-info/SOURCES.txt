@@ -1,0 +1,27 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/SATELLiTES/SATELLiTES.py
+src/SATELLiTES/SATELLiTES_bg01.png
+src/SATELLiTES/SATELLiTES_bg02.png
+src/SATELLiTES/SATELLiTES_enumeration.py
+src/SATELLiTES/SATELLiTES_favicon.png
+src/SATELLiTES/SATELLiTES_gui.py
+src/SATELLiTES/SATELLiTES_header.png
+src/SATELLiTES/SATELLiTES_style.css
+src/SATELLiTES/SATELLiTES_tabs_2reagents.py
+src/SATELLiTES/SATELLiTES_tabs_3reagents.py
+src/SATELLiTES/__init__.py
+src/SATELLiTES/docs/SATELLiTES Wiki.pdf
+src/SATELLiTES/tests/3reagents_testset.txt
+src/SATELLiTES/tests/tests_A_Cl.smi
+src/SATELLiTES/tests/tests_B_Br.smi
+src/SATELLiTES/tests/tests_C_I.smi
+src/SATELLiTES_SBDD.egg-info/PKG-INFO
+src/SATELLiTES_SBDD.egg-info/SOURCES.txt
+src/SATELLiTES_SBDD.egg-info/dependency_links.txt
+src/SATELLiTES_SBDD.egg-info/entry_points.txt
+src/SATELLiTES_SBDD.egg-info/requires.txt
+src/SATELLiTES_SBDD.egg-info/top_level.txt

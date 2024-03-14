@@ -1,0 +1,8 @@
+graft src
+graft tests
+draft docs
+
+include *.png
+include *.css
+include docs
+include tests

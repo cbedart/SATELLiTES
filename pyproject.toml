@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools"]
+
+[project]
+name = "SATELLiTES_SBDD"
+version = "1.0.8"
+authors = [
+  { name="Corentin BEDART", email="corentin.bedart@univ-lille.fr" },
+]
+description = "SATELLiTES - Take your synthon-based ligand discovery to infinity and beyond"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "rdkit",
+    "PyQt5",
+    "pandas",
+    "numpy",
+]
+
+[project.urls]
+Homepage = "https://github.com/cbedart/SATELLiTES"
+Issues = "https://github.com/cbedart/SATELLiTES/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+SATELLiTES = "SATELLiTES.SATELLiTES:run_SATELLiTES"

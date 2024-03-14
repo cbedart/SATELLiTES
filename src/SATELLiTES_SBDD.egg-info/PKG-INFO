@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: SATELLiTES-SBDD
+Version: 1.0.8
+Summary: SATELLiTES - Take your synthon-based ligand discovery to infinity and beyond
+Author-email: Corentin BEDART <corentin.bedart@univ-lille.fr>
+Project-URL: Homepage, https://github.com/cbedart/SATELLiTES
+Project-URL: Issues, https://github.com/cbedart/SATELLiTES/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SATELLiTES
+Take your synthon-based ligand discovery to infinity and beyond
+
+-------------
+
+## Citation
+
+If you find SATELLiTES useful or if you use it, please cite us:
+
+C Bedart, JJ Irwin, M Schapira - Take your synthon-based ligand discovery to infinity and beyond with SATELLiTES, a Synthon-based Approach for the Targeted Enumeration of Ligand Libraries and Expeditious Screening  
+https://github.com/cbedart/SATELLiTES/  
+2024 - To be published
+
+-------------
+
+## How to use SATELLiTES  
+
+If you want to learn how to use SATELLiTES, please have a look at the "SATELLiTES Wiki.pdf" document.  
+  
+This software is under active development: if you find any bug, critical issue, or if you just want to make comments/suggestions to improve the tool, please leave a comment in the "Issues" section. Thanks in advance for your help!
+
+
+
