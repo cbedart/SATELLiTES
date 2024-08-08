@@ -1,0 +1,10 @@
+name: satellites
+author: cbedart
+env_yml_path: SATELLiTES_conda_env.yml
+extension_module: satellites_extension
+description: SATELLiTES Extension
+long_description: KNIME extension for SATELLiTES - Take your synthon-based ligand discovery to infinity and beyond 
+group_id: org.cbedart
+version: 1.0.8
+vendor: Corentin BEDART, Lille, FRANCE
+license_file: LICENSE.TXT
