@@ -2,7 +2,7 @@
 requires = ["setuptools"]
 
 [project]
-name = "SATELLiTES_SBDD"
+name = "SATELLiTES-SBDD"
 version = "1.0.9"
 authors = [
   { name="Corentin BEDART", email="corentin.bedart@univ-lille.fr" },
@@ -25,6 +25,7 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/cbedart/SATELLiTES"
 Issues = "https://github.com/cbedart/SATELLiTES/issues"
+Documentation = "https://readthedocs.org"
 
 [tool.setuptools]
 include-package-data = true
