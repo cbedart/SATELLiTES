@@ -15,7 +15,7 @@ import SATELLiTES.SATELLiTES_gui as stgui
 
 ##############################################################################################################################################
 
-main_category = knext.category(path="/", level_id="satellites", name="SATELLiTES", description="SATELLiTES Extension", icon="icon.png")
+main_category = knext.category(path="/community", level_id="satellites", name="SATELLiTES", description="SATELLiTES Extension", icon="icon.png")
 
 #############################~
 
