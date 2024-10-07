@@ -1,0 +1,2 @@
+[console_scripts]
+SATELLiTES = SATELLiTES.SATELLiTES:run_SATELLiTES

@@ -1,0 +1,4 @@
+rdkit
+PyQt6
+pandas
+numpy<2

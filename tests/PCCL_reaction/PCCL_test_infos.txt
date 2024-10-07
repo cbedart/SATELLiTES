@@ -1,0 +1,37 @@
+######################################
+#     SATELLiTES - version 1.0.10     #
+# Copyright (C) 2024 Corentin BEDART #
+######################################
+
+# Example from #
+Bedart, C. et al. The Pan-Canadian Chemical Library: A mechanism to open academic chemistry to high-throughput virtual screening. Scientific Data 11, (2024). doi:10.1038/s41597-024-03443-5
+https://www.nature.com/articles/s41597-024-03443-5
+
+
+>>>Reagents A ([NX3;H2,H1;!$(NC=O)]):
+ReagentsA_ATZ_H16.smi
+
+>>>Reagents B (S=C=N[*;!H;!$(C=O)]):	
+ReagentsB_ATZ_H16.smi
+
+>>> SMARTS chemical reaction:
+[NX3;H2,H1;!$(NC=O):1].S=C=N[*;!H;!$(C=O):3]>>[*:1](C1=NN=NN1[*:3])
+
+
+
+######################################
+
+# How the dataset was created #
+
+The PCCL test set uses only aminotetrazole compounds (ATZ) with a number of heavy atoms equal to 16, downloaded from the PCCL Zenodo : https://zenodo.org/records/11371919
+The names of the compounds have been broken down to find the original reagents A and B, and downloaded from Zinc20 (https://zinc20.docking.org/substances/home/)
+
+import pandas as pd
+subset_PCCL = pd.read_csv("PCCL_Aminotetrazoles/smi/H16.smi", sep = "\t", header = None)
+subset_PCCL_split = subset_PCCL[1].str.split("_", expand=True)
+pd.DataFrame(subset_PCCL_split[1].unique()).to_csv("ZincID_A_ATZ_H16.txt", header=False, index=False)
+pd.DataFrame(subset_PCCL_split[2].unique()).to_csv("ZincID_B_ATZ_H16.txt", header=False, index=False)
+
+
+######################################
+

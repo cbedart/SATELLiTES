@@ -1,0 +1,5 @@
+SATELLiTES - KNIME Extension
+============================
+
+WIP
+

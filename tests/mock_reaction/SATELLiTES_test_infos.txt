@@ -1,0 +1,45 @@
+######################################
+#     SATELLiTES - version 1.0.10     #
+# Copyright (C) 2024 Corentin BEDART #
+######################################
+
+#############################~
+#         2-reagents        #~
+#############################~
+
+>>>Reagents A ([CX4]Cl):
+SATELLiTES_test_A_Cl.smi
+
+>>>Reagents B ([CX4]Br):
+SATELLiTES_test_B_Br.smi
+
+>>> SMARTS chemical reaction:
+[*:1]Cl.[*:2]Br>>c1c([*:1])cc([*:2])cc1
+
+>>> In case you need custom representative SMILES:
+CCl
+CBr
+
+
+#############################~
+#         3-reagents        #~
+#############################~
+
+>>>Reagents A ([CX4]Cl):
+SATELLiTES_test_A_Cl.smi
+
+>>>Reagents B ([CX4]Br):
+SATELLiTES_test_B_Br.smi
+
+>>>Reagents C ([CX4]I):
+SATELLiTES_test_C_I.smi
+
+>>> SMARTS chemical reaction:
+[*:1]Cl.[*:2]Br.[*:3]I>>c1c([*:1])cc([*:2])cc1([*:3])
+
+>>> In case you need custom representative SMILES:
+CCl
+CBr
+CI
+
+####################################################################################################
