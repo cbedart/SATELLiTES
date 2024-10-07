@@ -9,6 +9,7 @@ dependencies:
   - pandas=2.0.3
   - numpy=1.26.4
   - rdkit=2023.9.5
+  - pip=20.3
   - pip=20.3:
     - glibc
     - SATELLiTES-SBDD==1.0.10
