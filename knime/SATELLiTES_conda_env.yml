@@ -3,13 +3,12 @@ channels:
   - knime
   - conda-forge
 dependencies:
-  - python=3.11.9
-  - knime-extension
+  - python=3.11.6
+  - knime-extension=5.1.0
   - knime-python-base
   - pandas=2.0.3
-  - numpy=1.26.4
+  - numpy=1.26.2
   - rdkit=2023.9.5
   - pip=20.3
   - pip=20.3:
-    - glibc
-    - SATELLiTES-SBDD==1.0.10
+    - SATELLiTES-SBDD==1.0.11
