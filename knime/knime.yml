@@ -1,6 +1,11 @@
 name: satellites
 author: cbedart
 env_yml_path: SATELLiTES_conda_env.yml
+env_yml_path:
+  osx-64: SATELLiTES_conda_env_win64.yml
+  osx-arm64: SATELLiTES_conda_env_win64.yml
+  linux-64: SATELLiTES_conda_env_linux64.yml
+  win-64: SATELLiTES_conda_env_win64.yml
 extension_module: satellites_extension
 description: SATELLiTES Extension
 long_description: KNIME extension for SATELLiTES - Take your synthon-based ligand discovery to infinity and beyond 

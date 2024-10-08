@@ -1,0 +1,13 @@
+name: satellites-sbdd
+channels:
+  - knime
+  - conda-forge
+dependencies:
+  - python=3.10
+  - knime-extension
+  - knime-python-base
+  - pandas=2.0.3
+  - numpy=1.26.4
+  - rdkit=2023.9.5
+  - pip:
+    - SATELLiTES-SBDD==1.0.10
