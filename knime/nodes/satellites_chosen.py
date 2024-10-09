@@ -50,7 +50,7 @@ class Enumeration_chosen:
         # Check 3-reagents step #1
         if "Abc" in input_1_pandas.iloc[0,0] or "aBc" in input_1_pandas.iloc[0,0] or "abC" in input_1_pandas.iloc[0,0]:
             input_1_IDs = input_1_pandas.iloc[:,0]
-        elif "Abc" in input_1_pandas.iloc[0,0] or "aBc" in input_1_pandas.iloc[0,0] or "abC" in input_1_pandas.iloc[0,0]:
+        elif "Abc" in input_1_pandas.iloc[0,1] or "aBc" in input_1_pandas.iloc[0,1] or "abC" in input_1_pandas.iloc[0,1]:
             input_1_IDs = input_1_pandas.iloc[:,1]
         else:
             check += 1
@@ -58,7 +58,7 @@ class Enumeration_chosen:
         # Check 3-reagents step #2
         if "ABc" in input_1_pandas.iloc[0,0] or "AbC" in input_1_pandas.iloc[0,0] or "aBC" in input_1_pandas.iloc[0,0]:
             input_1_IDs = input_1_pandas.iloc[:,0]
-        elif "ABc" in input_1_pandas.iloc[0,0] or "AbC" in input_1_pandas.iloc[0,0] or "aBC" in input_1_pandas.iloc[0,0]:
+        elif "ABc" in input_1_pandas.iloc[0,1] or "AbC" in input_1_pandas.iloc[0,1] or "aBC" in input_1_pandas.iloc[0,1]:
             input_1_IDs = input_1_pandas.iloc[:,1]
         else:
             check += 1
