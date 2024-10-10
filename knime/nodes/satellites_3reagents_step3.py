@@ -71,7 +71,7 @@ class Enumeration_3reagents_step3:
         input_0_pandas_AB_B_IDs = input_0_pandas_AB_B.iloc[:,1].str.split("-", expand=True).iloc[:,2].to_list()
         with open(input_0_temp_AB_B, "w") as file_output_AB_B:
             for input_0_pandas_AB_B_ID in input_0_pandas_AB_B_IDs:
-                file_output_AB_B.write("{0}\t{1}\n".format(input_1_pandas.loc[input_1_pandas.iloc[:,1] == input_0_pandas_AB_B_ID].iloc[0,0], input_0_pandas_AB_B_ID))
+                file_output_AB_B.write("{0}\t{1}\n".format(input_2_pandas.loc[input_2_pandas.iloc[:,1] == input_0_pandas_AB_B_ID].iloc[0,0], input_0_pandas_AB_B_ID))
 
         #####~
 
@@ -80,14 +80,14 @@ class Enumeration_3reagents_step3:
         input_0_pandas_AC_A_IDs = input_0_pandas_AC_A.iloc[:,1].str.split("-", expand=True).iloc[:,1].to_list()
         with open(input_0_temp_AC_A, "w") as file_output_AC_A:
             for input_0_pandas_AC_A_ID in input_0_pandas_AC_A_IDs:
-                file_output_AC_A.write("{0}\t{1}\n".format(input_2_pandas.loc[input_2_pandas.iloc[:,1] == input_0_pandas_AC_A_ID].iloc[0,0], input_0_pandas_AC_A_ID))
+                file_output_AC_A.write("{0}\t{1}\n".format(input_1_pandas.loc[input_1_pandas.iloc[:,1] == input_0_pandas_AC_A_ID].iloc[0,0], input_0_pandas_AC_A_ID))
 
         input_0_temp_AC_C = workdir_temp + "/input_0_temp_AC_C.smi"
         input_0_pandas_AC_C = input_0_pandas.loc[input_0_pandas.iloc[:,1].str.contains("AbC")]
         input_0_pandas_AC_C_IDs = input_0_pandas_AC_C.iloc[:,1].str.split("-", expand=True).iloc[:,3].to_list()
         with open(input_0_temp_AC_C, "w") as file_output_AC_C:
             for input_0_pandas_AC_C_ID in input_0_pandas_AC_C_IDs:
-                file_output_AC_C.write("{0}\t{1}\n".format(input_2_pandas.loc[input_2_pandas.iloc[:,1] == input_0_pandas_AC_C_ID].iloc[0,0], input_0_pandas_AC_C_ID))
+                file_output_AC_C.write("{0}\t{1}\n".format(input_3_pandas.loc[input_3_pandas.iloc[:,1] == input_0_pandas_AC_C_ID].iloc[0,0], input_0_pandas_AC_C_ID))
 
         #####~
 
@@ -96,7 +96,7 @@ class Enumeration_3reagents_step3:
         input_0_pandas_BC_B_IDs = input_0_pandas_BC_B.iloc[:,1].str.split("-", expand=True).iloc[:,2].to_list()
         with open(input_0_temp_BC_B, "w") as file_output_BC_B:
             for input_0_pandas_BC_B_ID in input_0_pandas_BC_B_IDs:
-                file_output_BC_B.write("{0}\t{1}\n".format(input_3_pandas.loc[input_3_pandas.iloc[:,1] == input_0_pandas_BC_B_ID].iloc[0,0], input_0_pandas_BC_B_ID))
+                file_output_BC_B.write("{0}\t{1}\n".format(input_2_pandas.loc[input_2_pandas.iloc[:,1] == input_0_pandas_BC_B_ID].iloc[0,0], input_0_pandas_BC_B_ID))
 
         input_0_temp_BC_C = workdir_temp + "/input_0_temp_BC_C.smi"
         input_0_pandas_BC_C = input_0_pandas.loc[input_0_pandas.iloc[:,1].str.contains("aBC")]

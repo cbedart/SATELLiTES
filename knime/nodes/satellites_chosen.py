@@ -36,37 +36,58 @@ class Enumeration_chosen:
         check = 0
 
         #############################~
+        # Check if the IDs are in the first column or without a SMILES string
 
-        # Check 2-reagents step #1
         if "Ab" in input_1_pandas.iloc[0,0] or "Ba" in input_1_pandas.iloc[0,0]:
             input_1_IDs = input_1_pandas.iloc[:,0]
-        elif "Ab" in input_1_pandas.iloc[0,1] or "Ba" in input_1_pandas.iloc[0,1]:
-            input_1_IDs = input_1_pandas.iloc[:,1]
         else:
             check += 1
 
-        #############################~
+        #####~
 
-        # Check 3-reagents step #1
         if "Abc" in input_1_pandas.iloc[0,0] or "aBc" in input_1_pandas.iloc[0,0] or "abC" in input_1_pandas.iloc[0,0]:
             input_1_IDs = input_1_pandas.iloc[:,0]
-        elif "Abc" in input_1_pandas.iloc[0,1] or "aBc" in input_1_pandas.iloc[0,1] or "abC" in input_1_pandas.iloc[0,1]:
-            input_1_IDs = input_1_pandas.iloc[:,1]
         else:
             check += 1
 
-        # Check 3-reagents step #2
+        #####~
+
         if "ABc" in input_1_pandas.iloc[0,0] or "AbC" in input_1_pandas.iloc[0,0] or "aBC" in input_1_pandas.iloc[0,0]:
             input_1_IDs = input_1_pandas.iloc[:,0]
-        elif "ABc" in input_1_pandas.iloc[0,1] or "AbC" in input_1_pandas.iloc[0,1] or "aBC" in input_1_pandas.iloc[0,1]:
-            input_1_IDs = input_1_pandas.iloc[:,1]
         else:
             check += 1
+
+
+        #############################~
+        # Check if the IDs are in the second column, before checking if there is a second column
+        if input_1_pandas.shape[1] > 1:
+
+            if "Ab" in input_1_pandas.iloc[0,1] or "Ba" in input_1_pandas.iloc[0,1]:
+                input_1_IDs = input_1_pandas.iloc[:,1]
+            else:
+                check += 1
+
+            #####~
+
+            if "Abc" in input_1_pandas.iloc[0,1] or "aBc" in input_1_pandas.iloc[0,1] or "abC" in input_1_pandas.iloc[0,1]:
+                input_1_IDs = input_1_pandas.iloc[:,1]
+            else:
+                check += 1
+
+            #####~
+
+            if "ABc" in input_1_pandas.iloc[0,1] or "AbC" in input_1_pandas.iloc[0,1] or "aBC" in input_1_pandas.iloc[0,1]:
+                input_1_IDs = input_1_pandas.iloc[:,1]
+            else:
+                check += 1
+
+        else:
+            check += 3
 
         #############################~
 
         # Error if no IDs
-        if check == 3:
+        if check == 6:
             raise TypeError("You need to give SATELLiTES compound IDs, with tags at the start of the IDs.")
 
         #############################~
