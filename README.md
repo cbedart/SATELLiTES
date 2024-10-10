@@ -1,4 +1,4 @@
-<p align="center"><img src="src/SATELLiTES/SATELLiTES_header_hd.png" width=60% /></p>
+<p align="center"><img src="src/SATELLiTES-SBDD/SATELLiTES_header_hd.png" width=60% /></p>
 
 <p align="center">Take your synthon-based ligand discovery to infinity and beyond !</p><br />
 
