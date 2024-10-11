@@ -10,6 +10,9 @@ import os
 import shutil
 import pandas as pd
 
+import pickle
+
+import SATELLiTES
 import SATELLiTES.SATELLiTES_enumeration as stenum
 import SATELLiTES.SATELLiTES_gui as stgui
 
