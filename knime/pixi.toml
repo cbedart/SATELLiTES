@@ -1,0 +1,35 @@
+[workspace]
+channels = ["knime", "conda-forge"]
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+
+[tasks]
+test = { cmd = "pytest" }
+format = { cmd = "ruff format ." }
+
+[dependencies]
+python = "3.10.*"
+knime-extension = "*"
+knime-python-base = "*"
+pandas="==2.0.3"
+numpy="==1.26.4"
+rdkit = "2023.9.5.*"
+
+[pypi-dependencies]
+satellites-sbdd = "==1.0.10"
+
+[feature.build.dependencies]
+python = "3.9.*"
+knime-extension-bundling = "5.*"
+
+[feature.debug.dependencies]
+debugpy = "*"
+
+[feature.build.tasks]
+build = { args = [{ "arg" = "dest", "default" = "./local-update-site" }], cmd = "build-python-extension . {{ dest }} --disable-strict-enforcement --update-sites-version nightly"}
+register-debug-in-knime = { description = "Register the current KNIME extension with a KNIME installation. Usage: 'pixi run register-debug-in-knime' (default locations) or 'pixi run register-debug-in-knime C:/' (search entire C: drive if no executables found). Note windows paths should not end with \\ (backslash)", args = [
+                { "arg" = "search_path", "default" = "" }], cmd = "register-debug-in-knime{% if search_path %} --search-path \"{{ search_path }}\"{% endif %}" }
+
+
+[environments]
+build = {features = ["build"], no-default-feature = true}
+debug = {features = ["debug"]}
